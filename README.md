@@ -1,32 +1,31 @@
+# OCR (Optical Character Recognition) Project
 
-# Projeto de OCR (Reconhecimento Óptico de Caracteres)
+This project implements an OCR (Optical Character Recognition) solution using Python, Tesseract OCR, and a basic GUI (Graphical User Interface) with Tkinter. The software allows the user to select an image from their file system and extract text from it, optimizing the process for different types of text such as hexadecimal, digits, alphabetical, or a mix of all.
 
-Este projeto implementa uma solução de OCR (Reconhecimento Óptico de Caracteres) utilizando o Python, Tesseract OCR, e uma interface gráfica básica (GUI) com Tkinter. O software permite ao usuário selecionar uma imagem do sistema de arquivos e extrair texto dela, otimizando o processo para diferentes tipos de texto, como hexadecimal, dígitos, alfabético, ou uma mistura de todos.
+## Features
 
-## Características
+- **Image Selection**: Allows the user to select an image from their file system for text recognition.
+- **Image Pre-processing**: Applies image pre-processing techniques to enhance the quality of the text to be recognized, including contrast adjustment and sharpening.
+- **Support for Different Text Types**: Offers the option to optimize text recognition for specific formats - hexadecimal, digits, alphabetical, or all.
+- **User-friendly GUI**: Utilizes Tkinter for a simple graphical interface, facilitating user interaction.
+- **Text Export**: Saves the extracted text in a `.txt` file, in the same directory as the original image.
 
-- **Seleção de Imagem**: Permite ao usuário selecionar uma imagem de seu sistema de arquivos para o reconhecimento de texto.
-- **Pré-processamento de Imagem**: Aplica técnicas de pré-processamento na imagem para melhorar a qualidade do texto a ser reconhecido, incluindo ajuste de contraste e nitidez.
-- **Suporte a Diferentes Tipos de Texto**: Oferece a opção de otimizar o reconhecimento de texto para formatos específicos - hexadecimal, dígitos, letras alfabéticas ou todos.
-- **Interface Gráfica Amigável**: Utiliza Tkinter para uma interface gráfica simples, facilitando a interação com o usuário.
-- **Exportação de Texto**: Salva o texto extraído em um arquivo `.txt`, no mesmo diretório da imagem original.
+## Technologies Used
 
-## Tecnologias Utilizadas
+- **Python**: The programming language used to implement the software logic.
+- **Tesseract OCR**: An open-source OCR engine used for extracting text from images.
+- **Tkinter**: A library for creating the graphical interface.
 
-- **Python**: Linguagem de programação utilizada para implementar a lógica do software.
-- **Tesseract OCR**: Motor de OCR open-source utilizado para a extração de texto das imagens.
-- **Tkinter**: Biblioteca para criação da interface gráfica.
-
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Bibliotecas Python: Pillow, pytesseract, tkinter (geralmente vem instalada com Python).
-- Tesseract OCR instalado no sistema e configurado nas variáveis de ambiente do PATH.
+- Python libraries: Pillow, pytesseract, tkinter (typically comes installed with Python).
+- Tesseract OCR installed on the system and configured in the system's PATH environment variable.
 
-## Instalação
+## Installation
 
-1. **Instalar o Python**: Certifique-se de ter o Python 3.x instalado em seu sistema.
-2. **Instalar o Tesseract OCR**: [Baixe e instale o Tesseract OCR](https://github.com/tesseract-ocr/tesseract) seguindo as instruções para o seu sistema operacional.
-3. **Instalar Dependências do Python**: Execute o seguinte comando no terminal para instalar as bibliotecas necessárias:
+1. **Install Python**: Ensure you have Python 3.x installed on your system.
+2. **Install Tesseract OCR**: [Download and install Tesseract OCR](https://github.com/tesseract-ocr/tesseract) following the instructions for your operating system.
+3. **Install Python Dependencies**: Run the following command in the terminal to install the necessary libraries:
    ```bash
    pip install Pillow pytesseract
